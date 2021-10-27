@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.2.19 (2021-10-27)
+
 ### [1.2.18](https://github.com/rdarida/lerna-templater/compare/v1.2.17...v1.2.18) (2021-04-12)
 
 
