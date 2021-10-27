@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/rdarida/lerna-templater/compare/v1.2.21...v1.3.0) (2021-10-27)
+
+
+### Features
+
+* add any type to error ([fac8c4b](https://github.com/rdarida/lerna-templater/commit/fac8c4ba68cb26cc4ad5a1421982e6f38783e235))
+
 ### [1.2.21](https://github.com/rdarida/lerna-templater/compare/v1.2.20...v1.2.21) (2021-10-27)
 
 ### [1.2.20](https://github.com/rdarida/lerna-templater/compare/v1.2.19...v1.2.20) (2021-10-27)
