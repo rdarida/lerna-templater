@@ -1,0 +1,75 @@
+{
+  "name": "lerna-templater",
+  "description": "Generates Package from Template for a Lerna Monorepo",
+  "version": "1.2.18",
+  "license": "MIT",
+  "author": "Róbert Darida",
+  "keywords": [
+    "lerna",
+    "package",
+    "generator",
+    "template"
+  ],
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/rdarida"
+    }
+  ],
+  "homepage": "https://rdarida.github.io/lerna-templater",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdarida/lerna-templater.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rdarida/lerna-templater/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "lerna-templater": "dist/cli.js"
+  },
+  "scripts": {
+    "prepare": "is-ci || husky install",
+    "clean": "rimraf coverage dist docs",
+    "format": "prettier --write \"./{src,test}/**/*.ts\"",
+    "pretest": "rimraf coverage",
+    "test": "jest",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "predocs": "rimraf docs",
+    "docs": "typedoc --out docs --exclude \"src/cli.ts\" src",
+    "prepublishOnly": "npm run build",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin main",
+    "prestart": "npm run build",
+    "start": "node dist/cli.js --help"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.10",
+    "@types/mustache": "^4.1.1",
+    "@types/rimraf": "^3.0.0",
+    "fs-extra": "^10.0.0",
+    "mustache": "^4.2.0",
+    "rimraf": "^3.0.2",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^15.6.1",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-config": "26.6.3",
+    "prettier": "^2.2.1",
+    "standard-version": "^9.2.0",
+    "ts-jest": "^26.5.4",
+    "typedoc": "^0.20.35",
+    "typescript": "^4.2.4"
+  }
+}
