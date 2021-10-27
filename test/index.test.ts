@@ -1,5 +1,5 @@
 import { sync as rimraf } from 'rimraf';
-import { mkdirSync, readFileSync, BaseEncodingOptions } from 'fs-extra';
+import { mkdirSync, readFileSync } from 'fs-extra';
 import { resolve, join } from 'path';
 import { templater, TemplaterOptions } from '../src';
 
