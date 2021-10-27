@@ -12,7 +12,7 @@ type ArgvType = {
 ((argv: ArgvType): void => {
   try {
     templater(process.cwd(), argv);
-  } catch (error) {
+  } catch (error: any) {
     console.log(error.message);
     process.exit(1);
   }
