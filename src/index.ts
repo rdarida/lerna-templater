@@ -67,18 +67,28 @@ function copyTemplate(cwd: string, template: string, target: string): boolean {
   return true;
 }
 
-const flatten = (array: Array<any>): Array<any> => array.reduce((flattened, entry) => flattened.concat(Array.isArray(entry) ? flatten(entry) : entry), [])
+const flatten = (array: Array<any>): Array<any> =>
+  array.reduce(
+    (flattened, entry) =>
+      flattened.concat(Array.isArray(entry) ? flatten(entry) : entry),
+    []
+  );
 
 function getMustacheFiles(target: string, relative = ''): string[] {
-  return flatten(readdirSync(target).map((f) => {
-    if (lstatSync(join(target, f)).isFile()) {
-      if (f.endsWith('.mustache')) {
-        return relative ? join(relative, f) : f;
-       }
-       return [];
-    }
-    return getMustacheFiles(join(target, f), relative ? join(relative, f) : f);
-  }));
+  return flatten(
+    readdirSync(target).map((f) => {
+      if (lstatSync(join(target, f)).isFile()) {
+        if (f.endsWith('.mustache')) {
+          return relative ? join(relative, f) : f;
+        }
+        return [];
+      }
+      return getMustacheFiles(
+        join(target, f),
+        relative ? join(relative, f) : f
+      );
+    })
+  );
 }
 
 /**

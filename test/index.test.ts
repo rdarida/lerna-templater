@@ -16,7 +16,7 @@ const FILES = [
   ['README.test.md', 'README.test.md']
 ];
 
-const FILE_OPTS:{ encoding: BufferEncoding; flag: string; } = {
+const FILE_OPTS: { encoding: BufferEncoding; flag: string } = {
   encoding: 'utf-8',
   flag: 'r'
 };
