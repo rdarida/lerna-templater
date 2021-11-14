@@ -1,6 +1,6 @@
 <img src="https://repository-images.githubusercontent.com/421865817/f23da96c-d88b-4ebb-bd6c-bf881ba99110">
 <h1 align="center">lerna-templater</h1>
-<p align="center">Generates Package from Template for a Lerna Monorepo</p>
+<p align="center">Generates package from template for a Lerna Monorepo Project</p>
 <p align="center">
   <a href="https://github.com/rdarida/lerna-templater/actions/workflows/release.yml" target="_blank" alt="GitHub Actions">
     <img src="https://github.com/rdarida/lerna-templater/actions/workflows/release.yml/badge.svg" alt="Release">
