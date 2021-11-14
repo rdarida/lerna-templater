@@ -2,6 +2,10 @@
 <h1 align="center">lerna-templater</h1>
 <p align="center">Generates package from template for a Lerna Monorepo Project</p>
 <p align="center">
+  <a href="https://github.com/rdarida/lerna-templater" target="_blank">
+    <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" />
+  </a>
+
   <a href="https://github.com/rdarida/lerna-templater/actions/workflows/release.yml" target="_blank" alt="GitHub Actions">
     <img src="https://github.com/rdarida/lerna-templater/actions/workflows/release.yml/badge.svg" alt="Release">
   </a>
@@ -11,6 +15,10 @@
   </a>
   
   <img src="https://img.shields.io/librariesio/release/npm/lerna-templater">
+
+  <a href="https://www.patreon.com/rdarida" target="_blank">
+    <img src="https://img.shields.io/badge/-patreon-222222?style=flat&logo=patreon" />
+  </a>
 </p>
 <hr>
 
@@ -140,8 +148,18 @@ Running the  `npx lerna-templater -n "example-newpackage" -d "Description for th
   Description of the new example package
   ```
 
-## Resources
-- [Example repository](https://github.com/rdarida/base-scripts)
+<hr>
+<details>
+  <summary>
+    <strong>Resources</strong>
+  </summary>
 
-## License
-The **lerna-templater** is released under the MIT license.
+- Add resources here
+</details>
+<hr>
+
+<p align="center">
+  <a href="LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/license-MIT-green" />
+  </a>
+</p>
