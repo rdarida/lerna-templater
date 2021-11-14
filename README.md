@@ -1,3 +1,4 @@
+<img src="https://repository-images.githubusercontent.com/421865817/f23da96c-d88b-4ebb-bd6c-bf881ba99110">
 <h1 align="center">lerna-templater</h1>
 <p align="center">Generates Package from Template for a Lerna Monorepo</p>
 <p align="center">
