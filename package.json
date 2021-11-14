@@ -1,7 +1,7 @@
 {
   "name": "lerna-templater",
   "description": "Generates package from template for a Lerna Monorepo Project",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "license": "MIT",
   "author": "Róbert Darida",
   "keywords": [

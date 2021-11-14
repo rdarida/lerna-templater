@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/rdarida/lerna-templater/compare/v1.4.0...v1.4.1) (2021-11-14)
+
+
+### Bug Fixes
+
+* fix test files ([840ce68](https://github.com/rdarida/lerna-templater/commit/840ce683d216ef945bb0b63be46cac932412ce84))
+
 ## 1.4.0 (2021-11-14)
 
 
