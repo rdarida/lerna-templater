@@ -1,0 +1,6 @@
+coverage/
+dist/
+docs/
+package-lock.json
+yarn.lock
+tsconfig.json

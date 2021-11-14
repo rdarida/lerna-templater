@@ -9,13 +9,11 @@ module.exports = async () => {
       '^.+\\.(ts|tsx)$': 'ts-jest'
     },
     collectCoverage: false, // npm test -- --collectCoverage
-    collectCoverageFrom: [
-      'src/**/*.ts'
-    ],
+    collectCoverageFrom: ['src/**/*.ts'],
     coveragePathIgnorePatterns: [
       ...defaults.coveragePathIgnorePatterns,
       '/test/',
       '/src/cli.ts'
     ]
-  }
+  };
 };
