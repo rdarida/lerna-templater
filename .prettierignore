@@ -3,5 +3,5 @@ dist/
 docs/
 test/__template__/
 package-lock.json
-yarn.lock
 tsconfig.json
+yarn.lock
