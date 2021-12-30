@@ -1,7 +1,0 @@
-coverage/
-dist/
-docs/
-test/__template__/
-package-lock.json
-tsconfig.json
-yarn.lock
