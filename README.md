@@ -77,7 +77,7 @@ The **lerna-templater** uses [Mustache.js](https://npmjs.org/packages/mustache) 
 
 #### Available tags:
 - `{{{name}}}` - The name of the new package.
-- `{{{descriptio}}}` - The description of the new package.
+- `{{{description}}}` - The description of the new package.
 - `{{{scope}}}` - The scope of the new package.
 - `{{{packages}}}` - The relative path of the packages (output) directory.
 - `{{{template}}}` - The relative path of the template (input) directory.
