@@ -52,7 +52,7 @@ function getLerna(cwd: string): Lerna {
   }
 
   const lerna = readJSONSync(path) as Lerna;
-  lerna.packages = lerna.packages.map((p) => p.replace('/*', ''));
+  lerna.packages = lerna.packages?.map((p) => p.replace('/*', '')) ?? [];
   return lerna;
 }
 
