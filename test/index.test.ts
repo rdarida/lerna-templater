@@ -47,7 +47,7 @@ describe('Test index', () => {
 
     templater(__dirname, options);
 
-    FILES.forEach((v) => {
+    FILES.forEach(v => {
       const received = readFileSync(join(DIST, options.name, v[0]), FILE_OPTS);
 
       const expected = readFileSync(join(TMPL, v[1]), FILE_OPTS);
@@ -76,7 +76,7 @@ describe('Test index', () => {
 
     templater(__dirname, options);
 
-    FILES.forEach((v) => {
+    FILES.forEach(v => {
       const received = readFileSync(join(COVE, options.name, v[0]), FILE_OPTS);
 
       const expected = readFileSync(join(TMPL, v[1]), FILE_OPTS);

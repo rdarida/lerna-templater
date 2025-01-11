@@ -1,5 +1,5 @@
 {
-  "endOfLine": "lf",
+  "arrowParens": "avoid",
   "quoteProps": "consistent",
   "singleQuote": true,
   "trailingComma": "none"

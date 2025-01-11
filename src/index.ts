@@ -52,7 +52,7 @@ function getLerna(cwd: string): Lerna {
   }
 
   const lerna = readJSONSync(path) as Lerna;
-  lerna.packages = lerna.packages?.map((p) => p.replace('/*', '')) ?? [];
+  lerna.packages = lerna.packages?.map(p => p.replace('/*', '')) ?? [];
   return lerna;
 }
 
@@ -76,7 +76,7 @@ const flatten = (array: Array<any>): Array<any> =>
 
 function getMustacheFiles(target: string, relative = ''): string[] {
   return flatten(
-    readdirSync(target).map((f) => {
+    readdirSync(target).map(f => {
       if (lstatSync(join(target, f)).isFile()) {
         if (f.endsWith('.mustache')) {
           return relative ? join(relative, f) : f;
@@ -125,7 +125,7 @@ export function templater(cwd: string, options: TemplaterOptions): void {
 
   const templates = getMustacheFiles(target);
 
-  templates.forEach((t) => {
+  templates.forEach(t => {
     const name = t.replace('.mustache', '');
     const file = join(target, name);
 
@@ -142,5 +142,5 @@ export function templater(cwd: string, options: TemplaterOptions): void {
     writeFileSync(file, content);
   });
 
-  templates.forEach((t) => rimraf(join(target, t)));
+  templates.forEach(t => rimraf(join(target, t)));
 }
