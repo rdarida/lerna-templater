@@ -1,21 +1,15 @@
 {
   "name": "lerna-templater",
-  "description": "Generates package from template for a Lerna Monorepo Project",
   "version": "1.4.3",
-  "license": "MIT",
-  "author": "Róbert Darida",
+  "description": "Generates package from template for a Lerna Monorepo Project",
   "keywords": [
     "lerna",
     "package",
     "generator",
     "template"
   ],
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/rdarida"
-    }
-  ],
+  "license": "MIT",
+  "author": "Róbert Darida",
   "homepage": "https://rdarida.github.io/lerna-templater",
   "repository": {
     "type": "git",
@@ -24,24 +18,22 @@
   "bugs": {
     "url": "https://github.com/rdarida/lerna-templater/issues"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": "./dist/cli.js",
   "files": [
-    "dist"
+    "./dist"
   ],
-  "bin": {
-    "lerna-templater": "dist/cli.js"
-  },
   "scripts": {
     "prepare": "is-ci || husky install",
-    "clean": "rimraf coverage dist docs",
+    "clean": "rimraf ./coverage ./dist ./docs",
     "format": "prettier --write \"./**/*.(ts|js|html|json|yml)\"",
-    "pretest": "rimraf coverage",
+    "pretest": "rimraf ./coverage",
     "test": "jest",
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf ./dist",
     "build": "tsc",
-    "predocs": "rimraf docs",
-    "docs": "typedoc --out docs --exclude \"src/cli.ts\" src",
+    "predocs": "rimraf ./docs",
+    "docs": "typedoc --out ./docs --exclude \"./src/cli.ts\" ./src",
     "prepublishOnly": "npm run build",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin main",
