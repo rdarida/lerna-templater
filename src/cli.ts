@@ -47,5 +47,5 @@ type ArgvType = {
       describe: 'The path of the template folder',
       type: 'string'
     })
-    .help().argv
+    .help().parseSync()
 );

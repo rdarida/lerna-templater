@@ -37,7 +37,7 @@
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin main",
     "prestart": "npm run build",
-    "start": "node dist/cli.js --help"
+    "start": "node ./dist/cli.js --help"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
@@ -45,11 +45,12 @@
     "fs-extra": "^10.0.0",
     "mustache": "^4.2.0",
     "rimraf": "^6.0.1",
-    "yargs": "^17.3.1"
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
     "@types/node": "^17.0.5",
+    "@types/yargs": "^17.0.33",
     "jest": "^27.4.5",
     "jest-config": "^27.4.5",
     "prettier": "^3.4.2",
