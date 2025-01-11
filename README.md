@@ -15,10 +15,6 @@
   </a>
   
   <img src="https://img.shields.io/librariesio/release/npm/lerna-templater">
-
-  <a href="https://www.patreon.com/rdarida" target="_blank">
-    <img src="https://img.shields.io/badge/-patreon-222222?style=flat&logo=patreon" />
-  </a>
 </p>
 <hr>
 
