@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-
 import yargs from 'yargs/yargs';
+
 import { TemplaterOptions, templater } from '.';
 
 type ArgvType = {
@@ -47,5 +47,6 @@ type ArgvType = {
       describe: 'The path of the template folder',
       type: 'string'
     })
-    .help().parseSync()
+    .help()
+    .parseSync()
 );
