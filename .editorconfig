@@ -11,7 +11,7 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[test/__template__/src/**]
+[tests/__template__/src/**]
 insert_final_newline = false
 
 [{**/coverage/**,**/dist/**,**/docs/**,*.md}]

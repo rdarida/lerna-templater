@@ -12,8 +12,9 @@ module.exports = async () => {
     collectCoverageFrom: ['src/**/*.ts'],
     coveragePathIgnorePatterns: [
       ...defaults.coveragePathIgnorePatterns,
-      '/test/',
-      '/src/cli.ts'
+      '/dist/',
+      '/src/cli.ts',
+      '/tests/'
     ]
   };
 };

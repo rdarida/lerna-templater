@@ -1,7 +1,7 @@
 coverage
 dist
 docs
-test/__template__
+tests/__template__
 
 package-lock.json
 tsconfig.json
