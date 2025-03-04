@@ -5,10 +5,4 @@ updates:
     directory: '/'
     schedule:
       interval: daily
-    open-pull-requests-limit: 10
-    reviewers:
-      - rdarida
-    assignees:
-      - rdarida
-    labels:
-      - dependencies
+    open-pull-requests-limit: 1
