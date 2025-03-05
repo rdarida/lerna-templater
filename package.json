@@ -33,7 +33,7 @@
     "build": "tsup ./src/index.ts ./src/cli.ts --format cjs --dts --minify",
     "prepublishOnly": "npm run build",
     "release": "standard-version",
-    "postrelease": "git push --follow-tags origin main",
+    "postrelease": "git push --follow-tags origin HEAD",
     "predocs": "rimraf ./docs",
     "docs": "typedoc"
   },
