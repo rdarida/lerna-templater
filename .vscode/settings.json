@@ -6,12 +6,20 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-
-    "**/.cache": true,
-    "**/build": true,
-    "**/coverage": true,
-    "**/dist": true,
-    "**/docs": true,
-    "**/node_modules": true
+    // Directories
+    "coverage": true,
+    "dist": true,
+    "docs": true,
+    "node_modules": true,
+    // Files
+    ".editorconfig": true,
+    ".prettierignore": true,
+    ".prettierrc": true,
+    "CHANGELOG.md": true,
+    "jest.config.js": true,
+    "LICENSE": true,
+    "package-lock.json": true,
+    "sonar-project.properties": true,
+    "typedoc.json": true
   }
 }
