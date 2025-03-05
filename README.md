@@ -2,6 +2,10 @@
 <h1 align="center">lerna-templater</h1>
 <p align="center">Generates package from template for a Lerna Monorepo Project</p>
 <p align="center">
+  <a href="https://npmjs.com/package/lerna-templater/" target="_blank">
+    <img src="https://img.shields.io/npm/v/lerna-templater.svg" />
+  </a>
+
   <a href="https://github.com/rdarida/lerna-templater" target="_blank">
     <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" />
   </a>
@@ -140,7 +144,12 @@ Running the  `npx lerna-templater -n "example-newpackage" -d "Description for th
   Description of the new example package
   ```
 
+## Documentation
+
+See documentation [here](https://rdarida.github.io/lerna-templater/).
+
 <hr>
+
 <details>
   <summary>
     <strong>Resources</strong>
