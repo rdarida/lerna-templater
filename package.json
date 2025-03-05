@@ -35,7 +35,7 @@
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin main",
     "predocs": "rimraf ./docs",
-    "docs": "typedoc --out ./docs --exclude \"./src/cli.ts\" ./src"
+    "docs": "typedoc"
   },
   "dependencies": {
     "@types/fs-extra": "^11.0.4",
