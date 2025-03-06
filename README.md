@@ -1,8 +1,5 @@
 <img src="https://repository-images.githubusercontent.com/421865817/f23da96c-d88b-4ebb-bd6c-bf881ba99110">
 
-<h1 align="center">lerna-templater</h1>
-<p align="center">Generate packages from templates in a Lerna monorepo</p>
-
 <p align="center">
   <a href="https://npmjs.com/package/lerna-templater/" target="_blank">
     <img src="https://img.shields.io/npm/v/lerna-templater.svg" alt="npm version" />
