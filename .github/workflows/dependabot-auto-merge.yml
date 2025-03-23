@@ -15,29 +15,10 @@ permissions:
   pull-requests: write
 
 jobs:
-  dependabot:
+  dependabot-auto-merge:
     if: github.event.pull_request.user.login == 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up NodeJS
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Set up Git user
-        run: |
-          git config --global user.name "dependabot[bot]"
-          git config --global user.email "dependabot[bot]@users.noreply.github.com"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Release
-        run: npm run release
-
       - name: Merge Dependabot PR automatically
         run: gh pr merge --auto --merge "$PR_URL"
         env:
