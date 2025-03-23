@@ -38,7 +38,7 @@ templater(cwd, options);
 
 ### Using as a CLI tool
 ```sh
-npx lerna-templater -n "New Package Name" -d "Package Description"
+npx lerna-templater -n "example-newpackage" -d "Description for the new example package"
 ```
 
 Alternatively, add it to your `package.json` scripts:
@@ -50,7 +50,7 @@ Alternatively, add it to your `package.json` scripts:
 
 Then run:
 ```sh
-npm run create -- -n "New Package Name" -d "Package Description"
+npm run create -- -n "example-newpackage" -d "Description for the new example package"
 ```
 
 ## API
@@ -121,14 +121,14 @@ Generates a new package using a template. The package is created in the director
 #### `package.json`
 ```json
 {
-  "name": "@examplescope/example-monorepo"
+  "name": "@examplescope/example-newpackage"
 }
 ```
 
 ### Output
 Running:
 ```sh
-npx lerna-templater -n "example-newpackage" -d "Description for the new example package"
+npx lerna-templater -n "example-newpackage" -d "Description for the new example package" -s "@examplescope"
 ```
 Generates:
 - `packages/example-newpackage/`
