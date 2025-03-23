@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.9](https://github.com/rdarida/lerna-templater/compare/v1.4.8...v1.4.9) (2025-03-23)
+
+
+### Bug Fixes
+
+* remove release from dependabot-auto-merge action ([00a62fc](https://github.com/rdarida/lerna-templater/commit/00a62fc9b89376d8ce0cae77d5779fdb3c0d3a25))
+
 ### [1.4.8](https://github.com/rdarida/lerna-templater/compare/v1.4.7...v1.4.8) (2025-03-06)
 
 ### [1.4.7](https://github.com/rdarida/lerna-templater/compare/v1.4.6...v1.4.7) (2025-03-05)
