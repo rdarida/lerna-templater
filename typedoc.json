@@ -2,5 +2,6 @@
   "entryPoints": ["src"],
   "out": "docs",
   "exclude": ["src/cli.ts"],
-  "includeVersion": true
+  "includeVersion": true,
+  "favicon": "favicon.ico"
 }
