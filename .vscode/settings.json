@@ -16,6 +16,7 @@
     ".prettierignore": true,
     ".prettierrc": true,
     "CHANGELOG.md": true,
+    "favicon.ico": true,
     "jest.config.js": true,
     "LICENSE": true,
     "package-lock.json": true,
