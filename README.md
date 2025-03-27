@@ -1,4 +1,4 @@
-<img src="https://repository-images.githubusercontent.com/421865817/93b5b25d-bf76-4a47-b04e-be734716c56d" />
+<img src="https://repository-images.githubusercontent.com/421865817/93b5b25d-bf76-4a47-b04e-be734716c56d" alt="Cover" />
 
 <p align="center">
   <a href="https://npmjs.com/package/lerna-templater/" target="_blank">
