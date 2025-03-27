@@ -1,4 +1,4 @@
-<img src="https://repository-images.githubusercontent.com/421865817/93b5b25d-bf76-4a47-b04e-be734716c56d">
+<img src="https://repository-images.githubusercontent.com/421865817/93b5b25d-bf76-4a47-b04e-be734716c56d" />
 
 <p align="center">
   <a href="https://npmjs.com/package/lerna-templater/" target="_blank">
@@ -17,7 +17,7 @@
     <img src="https://sonarcloud.io/api/project_badges/measure?project=rdarida_lerna-templater&metric=coverage" alt="Coverage" />
   </a>
 
-  <img src="https://img.shields.io/librariesio/release/npm/lerna-templater" />
+  <img src="https://img.shields.io/librariesio/release/npm/lerna-templater" alt="Dependencies" />
 </p>
 <hr>
 
