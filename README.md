@@ -9,13 +9,20 @@
     <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" alt="GitHub repository" />
   </a>
 
+  <a href="https://github.com/rdarida/lerna-templater/actions/workflows/publish.yml" target="_blank" alt="GitHub Actions">
+    <img src="https://github.com/rdarida/lerna-templater/actions/workflows/publish.yml/badge.svg" alt="Publish" />
+  </a>
+
   <a href="https://sonarcloud.io/dashboard?id=rdarida_lerna-templater" target="_blank">
     <img src="https://sonarcloud.io/api/project_badges/measure?project=rdarida_lerna-templater&metric=coverage" alt="Coverage" />
   </a>
 
-  <img src="https://img.shields.io/librariesio/release/npm/lerna-templater" alt="Libraries.io dependency status" />
+  <img src="https://img.shields.io/librariesio/release/npm/lerna-templater" />
 </p>
 <hr>
+
+# lerna-templater
+Generates package from template for a Lerna Monorepo Project
 
 ## Installation
 Install **`lerna-templater`** via **[npm](https://npmjs.org/package/lerna-templater)**:
@@ -153,9 +160,15 @@ Generates:
 Description for the new example package
 ```
 
-## Documentation
-See the full documentation [here](https://rdarida.github.io/lerna-templater/).
+<hr>
 
+<details>
+  <summary>
+    <strong>Resources</strong>
+  </summary>
+
+- [Documentation](https://rdarida.github.io/lerna-templater/)
+</details>
 <hr>
 
 <p align="center">
