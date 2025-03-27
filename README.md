@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://npmjs.com/package/lerna-templater/" target="_blank">
-    <img src="https://img.shields.io/npm/v/lerna-templater.svg" alt="npm version" />
+    <img src="https://img.shields.io/npm/v/lerna-templater.svg" alt="NPM" />
   </a>
 
   <a href="https://github.com/rdarida/lerna-templater" target="_blank">
-    <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" alt="GitHub repository" />
+    <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" alt="GitHub Repository" />
   </a>
 
   <a href="https://github.com/rdarida/lerna-templater/actions/workflows/publish.yml" target="_blank" alt="GitHub Actions">
@@ -173,6 +173,6 @@ Description for the new example package
 
 <p align="center">
   <a href="LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" />
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
   </a>
 </p>
