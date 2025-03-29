@@ -1,23 +1,23 @@
 <img src="https://repository-images.githubusercontent.com/421865817/93b5b25d-bf76-4a47-b04e-be734716c56d" alt="Cover" />
 
 <p align="center">
-  <a href="https://npmjs.com/package/lerna-templater/" target="_blank">
-    <img src="https://img.shields.io/npm/v/lerna-templater.svg" alt="NPM" />
+  <a href="https://npmjs.com/package/lerna-templater/" target="_blank" alt="NPM">
+    <img src="https://img.shields.io/npm/v/lerna-templater.svg" alt="NPM Badge" />
   </a>
 
-  <a href="https://github.com/rdarida/lerna-templater" target="_blank">
-    <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" alt="GitHub Repository" />
+  <a href="https://github.com/rdarida/lerna-templater" target="_blank" alt="GitHub Repository">
+    <img src="https://img.shields.io/badge/-repository-222222?style=flat&logo=github" alt="GitHub Repository Badge" />
   </a>
 
   <a href="https://github.com/rdarida/lerna-templater/actions/workflows/publish.yml" target="_blank" alt="GitHub Actions">
-    <img src="https://github.com/rdarida/lerna-templater/actions/workflows/publish.yml/badge.svg" alt="Publish" />
+    <img src="https://github.com/rdarida/lerna-templater/actions/workflows/publish.yml/badge.svg" alt="Publish Badge" />
   </a>
 
   <a href="https://sonarcloud.io/dashboard?id=rdarida_lerna-templater" target="_blank">
-    <img src="https://sonarcloud.io/api/project_badges/measure?project=rdarida_lerna-templater&metric=coverage" alt="Coverage" />
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=rdarida_lerna-templater&metric=coverage" alt="Coverage Badge" />
   </a>
 
-  <img src="https://img.shields.io/librariesio/release/npm/lerna-templater" alt="Dependencies" />
+  <img src="https://img.shields.io/librariesio/release/npm/lerna-templater" alt="Dependencies Badge" />
 </p>
 <hr>
 
@@ -172,7 +172,7 @@ Description for the new example package
 <hr>
 
 <p align="center">
-  <a href="LICENSE" target="_blank">
-    <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
+  <a href="LICENSE" target="_blank" alt="License">
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License Badge" />
   </a>
 </p>
