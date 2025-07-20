@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.13](https://github.com/rdarida/lerna-templater/compare/v1.4.12...v1.4.13) (2025-07-20)
+
+
+### Bug Fixes
+
+* use sonarqube-scan-action@v5 ([d9f4db9](https://github.com/rdarida/lerna-templater/commit/d9f4db9efc769be046c95f34223d7ab531994bbf))
+
 ### [1.4.12](https://github.com/rdarida/lerna-templater/compare/v1.4.11...v1.4.12) (2025-03-27)
 
 ### [1.4.11](https://github.com/rdarida/lerna-templater/compare/v1.4.10...v1.4.11) (2025-03-24)
