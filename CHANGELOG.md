@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.16](https://github.com/rdarida/lerna-templater/compare/v1.4.15...v1.4.16) (2025-11-29)
+
+
+### Bug Fixes
+
+* solve SonarQube issues ([b0b35ed](https://github.com/rdarida/lerna-templater/commit/b0b35eddcd5844c0421c84a430163c1b0cf58228))
+
 ### [1.4.15](https://github.com/rdarida/lerna-templater/compare/v1.4.14...v1.4.15) (2025-10-02)
 
 ### [1.4.14](https://github.com/rdarida/lerna-templater/compare/v1.4.13...v1.4.14) (2025-08-30)

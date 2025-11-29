@@ -1,4 +1,6 @@
-import { join } from 'path';
+import { join } from 'node:path';
+import { lstatSync } from 'node:fs';
+
 import {
   existsSync,
   copySync,
@@ -7,9 +9,10 @@ import {
   readFileSync,
   writeFileSync
 } from 'fs-extra';
-import { lstatSync } from 'fs';
+
 import mustache from 'mustache';
-import { sync as rimraf } from 'rimraf';
+import { rimrafSync } from 'rimraf';
+
 import { getScope } from './get-scope';
 
 export type TemplaterOptions = {
@@ -53,6 +56,7 @@ function getLerna(cwd: string): Lerna {
 
   const lerna = readJSONSync(path) as Lerna;
   lerna.packages = lerna.packages?.map(p => p.replace('/*', '')) ?? [];
+
   return lerna;
 }
 
@@ -64,6 +68,7 @@ function copyTemplate(cwd: string, template: string, target: string): boolean {
   }
 
   copySync(cwd, target);
+
   return true;
 }
 
@@ -83,6 +88,7 @@ function getMustacheFiles(target: string, relative = ''): string[] {
         }
         return [];
       }
+
       return getMustacheFiles(
         join(target, f),
         relative ? join(relative, f) : f
@@ -125,7 +131,7 @@ export function templater(cwd: string, options: TemplaterOptions): void {
 
   const templates = getMustacheFiles(target);
 
-  templates.forEach(t => {
+  for (const t of templates) {
     const name = t.replace('.mustache', '');
     const file = join(target, name);
 
@@ -139,8 +145,11 @@ export function templater(cwd: string, options: TemplaterOptions): void {
       version: lerna.version,
       repoDir: `${options.packages}/${options.name}`
     });
-    writeFileSync(file, content);
-  });
 
-  templates.forEach(t => rimraf(join(target, t)));
+    writeFileSync(file, content);
+  }
+
+  for (const t of templates) {
+    rimrafSync(join(target, t));
+  }
 }
