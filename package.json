@@ -41,7 +41,7 @@
     "@types/mustache": "^4.2.5",
     "fs-extra": "^11.2.0",
     "mustache": "^4.2.0",
-    "rimraf": "^6.0.1",
+    "rimraf": "^6.1.2",
     "yargs": "^18.0.0"
   },
   "devDependencies": {
