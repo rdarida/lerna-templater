@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.19](https://github.com/rdarida/lerna-templater/compare/v1.4.18...v1.4.19) (2025-12-02)
+
+### Bug Fixes
+
+* add host, owner, and repository properties to release-it configuration ([3086656](https://github.com/rdarida/lerna-templater/commit/30866564be895e9129e435c3028a55649131c85f))
+
 ## [1.4.18](https://github.com/rdarida/lerna-templater/compare/v1.4.17...v1.4.18) (2025-12-02)
 
 ### [1.4.17](https://github.com/rdarida/lerna-templater/compare/v1.4.16...v1.4.17) (2025-11-29)

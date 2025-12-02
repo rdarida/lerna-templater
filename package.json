@@ -1,6 +1,6 @@
 {
   "name": "lerna-templater",
-  "version": "1.4.18",
+  "version": "1.4.19",
   "description": "Generates package from template for a Lerna Monorepo Project",
   "keywords": [
     "lerna",
