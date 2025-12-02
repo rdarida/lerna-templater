@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+## [1.4.18](///compare/v1.4.17...v1.4.18) (2025-12-02)
 
 ### [1.4.17](https://github.com/rdarida/lerna-templater/compare/v1.4.16...v1.4.17) (2025-11-29)
 

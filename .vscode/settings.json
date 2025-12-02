@@ -15,6 +15,7 @@
     ".editorconfig": true,
     ".prettierignore": true,
     ".prettierrc": true,
+    ".release-it.json": true,
     "CHANGELOG.md": true,
     "favicon.ico": true,
     "jest.config.js": true,
