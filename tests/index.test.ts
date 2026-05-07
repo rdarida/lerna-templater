@@ -1,6 +1,8 @@
-import { sync as rimraf } from 'rimraf';
+import { resolve, join } from 'node:path';
+
 import { mkdirSync, readFileSync } from 'fs-extra';
-import { resolve, join } from 'path';
+import { sync as rimraf } from 'rimraf';
+
 import { templater, TemplaterOptions } from '../src';
 
 const TMPL = resolve(__dirname, '__template__');

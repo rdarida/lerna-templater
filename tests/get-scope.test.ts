@@ -1,4 +1,5 @@
-import { resolve } from 'path';
+import { resolve } from 'node:path';
+
 import { getScope } from '../src/get-scope';
 
 describe('Test getScope', () => {
