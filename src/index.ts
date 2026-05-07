@@ -1,5 +1,5 @@
-import { join } from 'node:path';
 import { lstatSync } from 'node:fs';
+import { join } from 'node:path';
 
 import {
   existsSync,
