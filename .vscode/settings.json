@@ -6,12 +6,10 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    // Directories
     "coverage": true,
     "dist": true,
     "docs": true,
     "node_modules": true,
-    // Files
     ".editorconfig": true,
     ".prettierignore": true,
     ".prettierrc": true,
@@ -22,6 +20,7 @@
     "LICENSE": true,
     "package-lock.json": true,
     "sonar-project.properties": true,
+    "tsup.config.ts": true,
     "typedoc.json": true
   },
   "sonarlint.connectedMode.project": {
