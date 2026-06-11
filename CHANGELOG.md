@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.4.26](https://github.com/rdarida/lerna-templater/compare/v1.4.25...v1.4.26) (2026-06-11)
+
 ## [1.4.25](https://github.com/rdarida/lerna-templater/compare/v1.4.24...v1.4.25) (2026-06-11)
 
 ## [1.4.24](https://github.com/rdarida/lerna-templater/compare/v1.4.23...v1.4.24) (2026-06-11)
