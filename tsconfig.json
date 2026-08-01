@@ -4,7 +4,7 @@
     "lib": ["ES2022"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "types": ["node", "jest"],
+    "types": ["node"],
     "resolveJsonModule": true,
     "noEmit": true,
     "esModuleInterop": true,

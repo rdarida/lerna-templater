@@ -2,6 +2,7 @@ import { resolve, join } from 'node:path';
 
 import { mkdirSync, readFileSync } from 'fs-extra';
 import { sync as rimraf } from 'rimraf';
+import { afterAll, beforeEach, describe, expect, test } from 'vitest';
 
 import { templater, TemplaterOptions } from '../src';
 
