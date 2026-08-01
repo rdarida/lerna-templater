@@ -2,7 +2,7 @@ import { resolve, join } from 'node:path';
 
 import { mkdirSync, readFileSync } from 'fs-extra';
 import { sync as rimraf } from 'rimraf';
-import { afterAll, beforeEach, describe, expect, test } from 'vitest';
+import { afterAll, beforeEach, describe, expect, it } from 'vitest';
 
 import { templater, TemplaterOptions } from '../src';
 
@@ -30,7 +30,7 @@ describe('Test index', () => {
     mkdirSync(DIST);
   });
 
-  test('should throw "Could not find lerna.json!"', () => {
+  it('should throw "Could not find lerna.json!"', () => {
     const options: TemplaterOptions = {
       name: 'name'
     };
@@ -41,7 +41,7 @@ describe('Test index', () => {
     }).toThrow(expected);
   });
 
-  test('should copy files', () => {
+  it('should copy files', () => {
     const options: TemplaterOptions = {
       name: 'name',
       description: 'Description',
@@ -58,7 +58,7 @@ describe('Test index', () => {
     });
   });
 
-  test('should throw "The package arleady exists!"', () => {
+  it('should throw "The package arleady exists!"', () => {
     const options: TemplaterOptions = {
       name: 'error'
     };
@@ -69,7 +69,7 @@ describe('Test index', () => {
     }).toThrow('The package already exists!');
   });
 
-  test('should handle package parameter', () => {
+  it('should handle package parameter', () => {
     const options: TemplaterOptions = {
       name: 'name',
       scope: '@scope',
@@ -87,7 +87,7 @@ describe('Test index', () => {
     });
   });
 
-  test('should throw "The template folder is not found!"', () => {
+  it('should throw "The template folder is not found!"', () => {
     const options: TemplaterOptions = {
       name: 'name',
       template: 'wrongtemplate'

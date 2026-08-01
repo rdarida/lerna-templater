@@ -1,26 +1,20 @@
 import { resolve } from 'node:path';
 
-import { describe, expect, test } from 'vitest';
+import { describe, expect, it } from 'vitest';
 
 import { getScope } from '../src/get-scope';
 
 describe('Test getScope', () => {
-  test('should return with empty string: !exists', () => {
-    const received = getScope(resolve(__dirname, 'wrong'));
-    expect(received).toEqual('');
+  it.each([
+    { path: resolve(__dirname, 'wrong'), expected: '' },
+    { path: resolve(__dirname, 'scope'), expected: '' },
+    { path: resolve(__dirname, '..'), expected: '' },
+  ])('should return with empty string for $path', ({ path, expected }) => {
+    const received = getScope(path);
+    expect(received).toEqual(expected);
   });
 
-  test('should return with empty string: !readJSONSync', () => {
-    const received = getScope(resolve(__dirname, 'scope'));
-    expect(received).toEqual('');
-  });
-
-  test('should return with empty string: !array', () => {
-    const received = getScope(resolve(__dirname, '..'));
-    expect(received).toEqual('');
-  });
-
-  test('should return with "@scope"', () => {
+  it('should return with "@scope"', () => {
     const received = getScope(resolve(__dirname));
     expect(received).toEqual('@scope');
   });
