@@ -16,12 +16,12 @@
     ".release-it.json": true,
     "CHANGELOG.md": true,
     "favicon.ico": true,
-    "jest.config.ts": true,
     "LICENSE": true,
     "package-lock.json": true,
     "sonar-project.properties": true,
     "tsup.config.ts": true,
-    "typedoc.json": true
+    "typedoc.json": true,
+    "vitest.config.ts": true
   },
   "sonarlint.connectedMode.project": {
     "connectionId": "rdarida",

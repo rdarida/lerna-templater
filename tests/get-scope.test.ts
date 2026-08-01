@@ -1,5 +1,7 @@
 import { resolve } from 'node:path';
 
+import { describe, expect, test } from 'vitest';
+
 import { getScope } from '../src/get-scope';
 
 describe('Test getScope', () => {
