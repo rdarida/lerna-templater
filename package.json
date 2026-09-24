@@ -51,7 +51,7 @@
     "@vitest/coverage-istanbul": "^4.1.10",
     "prettier": "^3.9.9",
     "prettier-plugin-brace-style": "^0.10.3",
-    "release-it": "^20.2.0",
+    "release-it": "^21.1.0",
     "tsup": "^8.5.1",
     "typedoc": "^0.28.1",
     "typescript": "^6.0.3",
