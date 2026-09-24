@@ -1,6 +1,8 @@
 {
+  "plugins": ["prettier-plugin-brace-style"],
   "arrowParens": "avoid",
   "quoteProps": "consistent",
   "singleQuote": true,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "braceStyle": "stroustrup"
 }

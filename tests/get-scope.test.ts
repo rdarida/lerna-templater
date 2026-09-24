@@ -8,7 +8,7 @@ describe('Test getScope', () => {
   it.each([
     { path: resolve(__dirname, 'wrong'), expected: '' },
     { path: resolve(__dirname, 'scope'), expected: '' },
-    { path: resolve(__dirname, '..'), expected: '' },
+    { path: resolve(__dirname, '..'), expected: '' }
   ])('should return with empty string for $path', ({ path, expected }) => {
     const received = getScope(path);
     expect(received).toEqual(expected);
