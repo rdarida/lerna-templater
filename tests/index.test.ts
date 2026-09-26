@@ -1,4 +1,4 @@
-import { resolve, join } from 'node:path';
+import { join } from 'node:path';
 
 import { mkdirSync, readFileSync } from 'fs-extra';
 import { sync as rimraf } from 'rimraf';
@@ -6,9 +6,11 @@ import { afterAll, beforeEach, describe, expect, it } from 'vitest';
 
 import { templater, TemplaterOptions } from '../src';
 
-const TMPL = resolve(__dirname, '__template__');
-const DIST = resolve(__dirname, 'dist');
-const COVE = resolve(__dirname, 'coverage');
+import { FIXTURES_DIR } from './constants';
+
+const TMPL = join(FIXTURES_DIR, '__template__');
+const DIST = join(FIXTURES_DIR, 'dist');
+const COVE = join(FIXTURES_DIR, 'coverage');
 
 const FILES = [
   ['package.json', 'package.test.json'],
@@ -35,10 +37,9 @@ describe('Test index', () => {
       name: 'name'
     };
 
-    const expected = 'Could not find lerna.json!';
     expect(() => {
-      templater(join(__dirname, '..'), options);
-    }).toThrow(expected);
+      templater(join(FIXTURES_DIR, '..'), options);
+    }).toThrow('Could not find lerna.json!');
   });
 
   it('should copy files', () => {
@@ -48,12 +49,12 @@ describe('Test index', () => {
       scope: '@scope'
     };
 
-    templater(__dirname, options);
+    templater(FIXTURES_DIR, options);
 
     FILES.forEach(v => {
       const received = readFileSync(join(DIST, options.name, v[0]), FILE_OPTS);
-
       const expected = readFileSync(join(TMPL, v[1]), FILE_OPTS);
+
       expect(received).toEqual(expected);
     });
   });
@@ -64,8 +65,9 @@ describe('Test index', () => {
     };
 
     mkdirSync(join(DIST, options.name));
+
     expect(() => {
-      templater(__dirname, options);
+      templater(FIXTURES_DIR, options);
     }).toThrow('The package already exists!');
   });
 
@@ -77,12 +79,12 @@ describe('Test index', () => {
       packages: 'coverage'
     };
 
-    templater(__dirname, options);
+    templater(FIXTURES_DIR, options);
 
     FILES.forEach(v => {
       const received = readFileSync(join(COVE, options.name, v[0]), FILE_OPTS);
-
       const expected = readFileSync(join(TMPL, v[1]), FILE_OPTS);
+
       expect(received).toEqual(expected);
     });
   });
@@ -93,10 +95,9 @@ describe('Test index', () => {
       template: 'wrongtemplate'
     };
 
-    const expected = `The template folder is not found!\n${options.template}`;
     expect(() => {
-      templater(__dirname, options);
-    }).toThrow(expected);
+      templater(FIXTURES_DIR, options);
+    }).toThrow(`The template folder is not found!\n${options.template}`);
   });
 
   afterAll(() => {
