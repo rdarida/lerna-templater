@@ -1,7 +1,7 @@
 coverage
 dist
 docs
-tests/__template__
+tests/__fixtures__
 
 package-lock.json
 yarn.lock

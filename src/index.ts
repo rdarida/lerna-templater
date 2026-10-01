@@ -13,7 +13,7 @@ import {
 import mustache from 'mustache';
 import { rimrafSync } from 'rimraf';
 
-import { getScope } from './get-scope';
+import { getScope } from './getScope';
 
 export type TemplaterOptions = {
   /** The name of the new package. */

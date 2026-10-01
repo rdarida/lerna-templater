@@ -2,9 +2,9 @@ import { join } from 'node:path';
 
 import { describe, expect, it } from 'vitest';
 
-import { getScope } from '../src/get-scope';
+import { getScope } from '../src/getScope';
 
-import { FIXTURES_DIR } from './constants';
+import { FIXTURES_DIR } from './test_constants';
 
 describe('Test getScope', () => {
   it.each([

@@ -19,6 +19,7 @@
     "LICENSE": true,
     "package-lock.json": true,
     "sonar-project.properties": true,
+    "tsconfig.json": true,
     "tsup.config.ts": true,
     "typedoc.json": true,
     "vitest.config.ts": true
