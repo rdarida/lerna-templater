@@ -6,7 +6,7 @@ import { afterAll, beforeEach, describe, expect, it } from 'vitest';
 
 import { templater, TemplaterOptions } from '../src';
 
-import { FIXTURES_DIR } from './constants';
+import { FIXTURES_DIR } from './test_constants';
 
 const TMPL = join(FIXTURES_DIR, '__template__');
 const DIST = join(FIXTURES_DIR, 'dist');

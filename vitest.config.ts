@@ -9,7 +9,7 @@ export default defineConfig({
       provider: 'istanbul',
       reporter: ['text', 'html', 'lcov'],
       include: ['src/**/*.ts'],
-      exclude: ['dist/', 'src/**/*.d.ts', 'src/cli.ts', 'tests/']
+      exclude: ['dist/', 'src/**/*.d.ts', 'tests/']
     },
     globals: true,
     watch: false

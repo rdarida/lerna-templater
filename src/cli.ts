@@ -10,15 +10,7 @@ type ArgvType = {
 } & TemplaterOptions;
 
 ((argv: ArgvType): void => {
-  try {
-    templater(process.cwd(), argv);
-  }
-  catch (error: any) {
-    console.log(error.message);
-    process.exit(1);
-  }
-
-  process.exit();
+  templater(process.cwd(), argv);
 })(
   yargs(process.argv.slice(2))
     .option('name', {
